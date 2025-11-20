@@ -1,0 +1,3 @@
+From now on, we are gonna use Express inour application.
+So, Express is a minimal Node.js framework, which means it is actually built on top of Node.js.
+Behind the scenes, express is written using 100% Node.js code

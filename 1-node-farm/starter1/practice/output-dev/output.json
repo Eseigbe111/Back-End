@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "s/n": "WRN202832877",
+    "from": "Nigeria",
+    "pin": 743413836769,
+    "year": 2024,
+    "examination-Number": 4240951033,
+    "school-Type": "Omido Community High School"
+  },
+
+  {
+    "id": 1,
+    "s/n": "WRN202832878",
+    "from": "Spain",
+    "pin": 743413836769,
+    "year": 2024,
+    "examination-Number": 4240951033,
+    "school-Type": "Omido Community High School"
+  },
+
+  {
+    "id": 2,
+    "s/n": "WRN202832879",
+    "from": "England",
+    "pin": 743413836769,
+    "year": 2024,
+    "examination-Number": 4240951033,
+    "school-Type": "Omido Community High School"
+  },
+
+  {
+    "id": 3,
+    "s/n": "WRN202832870",
+    "from": "Norway",
+    "pin": 743413836769,
+    "year": 2024,
+    "examination-Number": 4240951033,
+    "school-Type": "Omido Community High School"
+  }
+]
