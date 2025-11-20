@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "productName": "Fresh Red Apple",
+    "image": "🍎",
+    "from": "USA",
+    "nutrients": "Vitamin C, Fiber",
+    "quantity": "1 kg",
+    "price": "1.50",
+    "description": "Crisp, sweet, and freshly harvested apples. Perfect for a healthy snack or juice!"
+  },
+  {
+    "id": 1,
+    "productName": "Organic Broccoli",
+    "image": "🥦",
+    "from": "Spain",
+    "nutrients": "Iron, Calcium, Vitamin K",
+    "quantity": "500 g",
+    "price": "2.25",
+    "description": "Fresh, organic broccoli grown without pesticides. Great for salads and stir-fries."
+  },
+  {
+    "id": 2,
+    "productName": "Fresh Carrots",
+    "image": "🥕",
+    "from": "Nigeria",
+    "nutrients": "Beta-carotene, Vitamin A",
+    "quantity": "1 kg",
+    "price": "1.10",
+    "description": "Bright orange carrots, crunchy and full of nutrients. Perfect for soups or raw snacks!"
+  }
+]

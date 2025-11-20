@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png"
+    />
+    <title>Product Overview</title>
+
+    <style>
+      body {
+        font-family: "Nunito Sans", Arial, sans-serif;
+        background: #f9f9f9;
+        padding: 2rem;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: "Megrim", sans-serif;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+      }
+      .card a {
+        text-decoration: none;
+        color: #007acc;
+      }
+      .not-organic {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Our Awesome Products</h1>
+
+    <div class="container">
+      <div class="card">
+        <div style="font-size: 2rem">🍎</div>
+        <h2>Fresh Red Apple</h2>
+        <p>Origin: USA</p>
+        <p>Price: $1.50</p>
+        <a href="product-apple.html">View Product</a>
+      </div>
+
+      <div class="card">
+        <div style="font-size: 2rem">🥦</div>
+        <h2>Organic Broccoli</h2>
+        <p>Origin: Spain</p>
+        <p>Price: $2.25</p>
+        <a href="product-broccoli.html">View Product</a>
+      </div>
+
+      <div class="card not-organic">
+        <div style="font-size: 2rem">🥕</div>
+        <h2>Carrots</h2>
+        <p>Origin: Nigeria</p>
+        <p>Price: $1.10</p>
+        <a href="product-carrot.html">View Product</a>
+      </div>
+    </div>
+  </body>
+</html>

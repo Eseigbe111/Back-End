@@ -1,0 +1,15 @@
+{
+  "name": "promise-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practice1.js",
+  "scripts": {
+    "dev": "nodemon practice.js"
+  },
+  "author": "Temple",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "superagent": "^10.2.3"
+  }
+}

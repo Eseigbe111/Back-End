@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900"
+      rel="stylesheet"
+    />
+    <title>{%PRODUCTNAME%}</title>
+    <style>
+      body {
+        font-family: "Nunito Sans", Arial, sans-serif;
+        background: #eef8ee;
+        color: #333;
+        padding: 2rem;
+      }
+      .product {
+        background: white;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+        padding: 2rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      h1 {
+        font-family: "Megrim", sans-serif;
+      }
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        color: #007acc;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <div style="font-size: 3rem">{%IMAGE%}</div>
+      <h1>{%PRODUCTNAME%}</h1>
+      <p><strong>From:</strong> {%FROM%}</p>
+      <p><strong>Quantity:</strong> {%QUANTITY%}</p>
+      <p><strong>Nutrients:</strong> {%NUTRIENTS%}</p>
+      <p><strong>Price:</strong> ${%PRICE%}</p>
+      <p>{%DESCRIPTION%}</p>
+      <a href="/overview">← Back to Overview</a>
+    </div>
+  </body>
+</html>
