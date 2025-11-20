@@ -1,0 +1,17 @@
+{
+  "name": "practicenatours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "nodemon 06-ABetterFileStructure.js"
+  },
+  "author": "Temple",
+  "license": "ISC",
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  }
+}
