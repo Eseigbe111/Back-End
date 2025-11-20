@@ -1,0 +1,33 @@
+{
+  "name": "practicenatours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "cross-env NODE_ENV=production nodemon server.js"
+  },
+  "author": "Temple",
+  "license": "ISC",
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.16.4",
+    "mongoose": "^8.19.2",
+    "morgan": "^1.10.1",
+    "slugify": "^1.6.6",
+    "validator": "^13.15.20"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^9.30.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.6.2"
+  }
+}
