@@ -23,14 +23,14 @@ const userSchema = new mongoose.Schema({
   // We want users to be able to upload a photo and this is usually optional in most web application
   photo: String,
 
-  // THIS IS FOR THIS LECTURE
+  
   role: {
     type: String,
     enum: ['user', 'guide', 'lead-guide', 'admin'], // These names are subject to the type of applicatn u are
     // creating. But in our case, it is what we listed above that make sense
     default: 'user',
   },
-  // Ends here
+
 
   password: {
     type: String,
