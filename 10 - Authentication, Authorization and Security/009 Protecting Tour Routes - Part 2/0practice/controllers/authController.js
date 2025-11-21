@@ -110,8 +110,9 @@ exports.protect = catchAsync(async (req, res, next) => {
   // PROTECTING TOUR ROUTES PART 2
   // 4) Token verification (to be implemented next): Validate the token using jwt.verify.
   // Use jwt.verify() to check if the token is valid, not expired, and not tampered with.
-  const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
   // promisify() is used so we can await the verification.
+  const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+  // process.env.JWT_SECRET is what verifies the "token" whether it is not expired, and not tampered with.
   console.log(decoded);
 
   // 5) Check if user still exists
