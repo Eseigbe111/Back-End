@@ -101,11 +101,11 @@ userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
       this.passwordChangedAt.getTime() / 1000,
       10, // we specify the base by usig 10
     );
-    // 3)Compare it to the token’s timestamp (JWTTimestamp).
-    // If passwordChangedAt > JWTTimestamp, return true → password was changed after token → token becomes invalid.
+    // 3)This compares Times.
+    // If token was created BEFORE password was changed → token should be invalid → return true
     return JWTTimestamp < changedTimestamp;
   }
-  // If passwordChangedAt does not exist: User never changed password → return false.
+  // If token was created AFTER password was changed → token is still valid → return false
   return false;
 };
 // Ends here
