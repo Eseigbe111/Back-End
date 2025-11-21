@@ -70,8 +70,8 @@ userSchema.pre('save', async function (next) {
 // CORRECTPASSWORD Instance Method: This checks if password from database matches the one entered on screen
 // The correctPassword function is an instance method added to the userSchema. Instance methods are functions available on all documents of a collection.
 userSchema.methods.correctPassword = async function (
-  canditatePassword,
-  userPassword,
+  canditatePassword, // This is the password of the person trying to login
+  userPassword,// This is the password stored in database 
   // Because the password field is hidden (select: false), this method receives the stored password as a parameter instead of using this.password.
 ) {
   // Uses bcrypt.compare() to check if the entered password matches the hashed one.
