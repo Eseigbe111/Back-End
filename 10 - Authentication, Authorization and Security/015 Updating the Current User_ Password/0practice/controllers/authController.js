@@ -120,7 +120,8 @@ exports.protect = catchAsync(async (req, res, next) => {
   // Use jwt.verify() to check if the token is valid, not expired, and not tampered with.
   const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
   // promisify() is used so we can await the verification.
-  console.log(decoded);
+  console.log(decoded); // decoded looks like { id: '691ab14247abf16129538802', iat: 1763722497, exp: 1771498497 }
+  // iat means initiated at.
 
   // 5) Check if user still exists
   const currentUser = await User.findById(decoded.id);
