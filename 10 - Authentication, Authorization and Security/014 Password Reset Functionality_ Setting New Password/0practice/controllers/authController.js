@@ -236,13 +236,16 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
     return next(new AppError('Token is invalid or has expired', 400));
   }
 
-  // 4) If User wiith that token exists, we do the below
-  // a) Set the new password for the user
+  // 4) If User with that token exists, we do the below
+  // a) Set the new password for the user: You are replacing the user’s old password with a new password from the user’s request
+  // (coming from the reset-password form).
   user.password = req.body.password;
   user.passwordConfirm = req.body.passwordConfirm;
-  // b) Delete the passwordResetToken and passwordResetExpires
+  // b) Delete the passwordResetToken and passwordResetExpires:Because the reset token is meant for one-time use only.After the password
+  // is reset, the token should no longer work.
   user.passwordResetToken = undefined;
   user.passwordResetExpires = undefined;
+  // This is intentionally clearing the fields so the token becomes invalid forever after it's used once.
 
   // 5) Saving the doc
   // In this case, we don't need to turn off the validators, bcos indeed we want to validate e.g we

@@ -92,7 +92,7 @@ userSchema.pre('save', function (next) {
   // if doc is new i.e a a newly created user, then, do not change the changedPasswordAt
   if (!this.isModified('password') || this.isNew) return next(); // "this.isNew" means when a new doc is created
 
-  // 2) If password as modified and doc is not new i.e no newly created user, then, update or set changedPasswordAt to the below
+  // 2) If password is modified and doc is not new i.e no newly created user, then, update or set changedPasswordAt to the below
   this.passwordChangedAt = Date.now() - 1000; // current time minus 1sec
 
   next();

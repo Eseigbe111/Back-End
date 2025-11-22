@@ -1,5 +1,5 @@
 //1) We start by installing Nodemailer by doing "npm i nodemailer" which we will use to
-// send email in aur application
+// send email in our application
 const nodemailer = require('nodemailer');
 
 //2) Create a sendEmail Utility Function: This function sends emails using a mail service.
@@ -34,5 +34,3 @@ const sendEmail = async (options) => {
 
 module.exports = sendEmail;
 // we will use this in the authController
-
-// Ends here
